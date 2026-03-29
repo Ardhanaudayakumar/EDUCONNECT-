@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>EduConnect Department Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+        }
+
+        /* Navbar */
+        nav {
+            background: #1e3c72;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dashboard cards */
+        .dashboard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        a.card-link {
+            text-decoration: none;
+            color: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>EduConnect</div>
+        <div>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+
+    <h1 style="text-align:center; margin-top:20px;">Student Dashboard</h1>
+
+    <div class="dashboard-container">
+        <a class="card-link" href="announcement.html"><div class="card">Announcements</div></a>
+        <a class="card-link" href="assignment.html"><div class="card">Assignments</div></a>
+        <a class="card-link" href="calendar.html"><div class="card">Calendar</div></a>
+        <a class="card-link" href="doubt.html"><div class="card">Doubts</div></a>
+        <a class="card-link" href="feedback.html"><div class="card">Feedback</div></a>
+        <a class="card-link" href="notices.html"><div class="card">Notices</div></a>
+    </div>
+
+</body>
+</html>
+
+
+
+</html>

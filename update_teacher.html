@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Teacher Location - EduConnect</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #time {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function updateDetails() {
+            var now = new Date();
+            document.getElementById("time").innerHTML =
+                "Last Updated: " + now.toLocaleString();
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Teacher Update Location</h1>
+
+    <div class="container">
+
+        <form>
+
+            <input type="text" placeholder="Teacher Name" required>
+
+            <select required>
+                <option value="">Select Department</option>
+                <option>Computer Science</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+
+            <input type="text" placeholder="Block">
+
+            <input type="text" placeholder="Class / Room">
+
+            <select>
+                <option>Available</option>
+                <option>Busy</option>
+                <option>Not Available</option>
+            </select>
+
+            <br><br>
+
+            <button type="button" onclick="updateDetails()">
+                Update Location
+            </button>
+
+        </form>
+
+        <p id="time"></p>
+
+    </div>
+
+</body>
+</html>
