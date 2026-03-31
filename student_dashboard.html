@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduConnect</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6fd3c3, #8fa8d6);
+}
+
+.header {
+    background: #2f3e46;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Assignment Page */
+.assignment-box {
+    background: #dfe7ef;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.back-link {
+    margin-top: 15px;
+    display: inline-block;
+    color: #2f3e46;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">Student dashboard</div>
+
+<div class="container">
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="dashboard">
+        <div class="card" onclick="showAssignments()">📌 Notices</div>
+        <div class="card">📢 Announcement</div>
+        <div class="card">📅 Academic Calendar</div>
+        <div class="card" onclick="showAssignments()">📚 Assignment</div>
+        <div class="card">💬 Student Feedback</div>
+        <div class="card">❓ Submit Doubt</div>
+        <div class="card">👨‍🏫 Teacher Availability</div>
+        <div class="card">📍 Teacher Location</div>
+    </div>
+
+    
+
+</body>
+</html>
